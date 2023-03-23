@@ -89,7 +89,7 @@ export async function createStreamingChatCompletion(messages: OpenAIMessage[], p
 
     messagesToSend = await selectMessagesToSendSafely(messagesToSend, 2048);
 
-    const eventSource = new SSE('http://v.qxw.im:4000/v1/chat/completions', {
+    const eventSource = new SSE('https://chatgpt-api.qxw.im/v1/chat/completions', {
         method: "POST",
         headers: {
             'Accept': 'application/json, text/plain, */*',
