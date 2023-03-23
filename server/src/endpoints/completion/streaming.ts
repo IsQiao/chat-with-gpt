@@ -11,7 +11,7 @@ export default class StreamingCompletionRequestHandler extends RequestHandler {
             Connection: 'keep-alive',
         });
 
-        const eventSource = new EventSource('https://chatgpt-api.qxw.im/v1/chat/completions', {
+        const eventSource = new EventSource('https://chatgpt-api.qxw.im/api/v1/chat/completions', {
             method: "POST",
             headers: {
                 'Accept': 'application/json, text/plain, */*',
